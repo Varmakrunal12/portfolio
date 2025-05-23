@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARMA KRUNAL - Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="uditnormalimg.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0a192f] text-[#ccd6f6]">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#020c1b] shadow-lg">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-4">
+            <a href="#" class="text-[#64ffda] text-2xl font-bold">VK</a>
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex gap-8">
+                <a href="#home" class="text-[#ccd6f6] hover:text-[#64ffda] text-sm transition">Home</a>
+                <a href="#projects" class="text-[#ccd6f6] hover:text-[#64ffda] text-sm transition">Projects</a>
+                <a href="#skills" class="text-[#ccd6f6] hover:text-[#64ffda] text-sm transition">Skills</a>
+                <a href="#about" class="text-[#ccd6f6] hover:text-[#64ffda] text-sm transition">About Me</a>
+                <a href="#resume" class="text-[#ccd6f6] hover:text-[#64ffda] text-sm transition">Resume</a>
+                <a href="#contact" class="text-[#ccd6f6] hover:text-[#64ffda] text-sm transition">Contact</a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden text-[#64ffda] text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Nav Links -->
+        <div id="mobile-menu"
+            class="md:hidden fixed top-16 left-0 w-full bg-[#020c1b] z-40 flex flex-col items-center gap-6 py-6 transition-all duration-300 ease-in-out hidden">
+            <a href="#home" class="text-[#ccd6f6] hover:text-[#64ffda] text-lg transition">Home</a>
+            <a href="#projects" class="text-[#ccd6f6] hover:text-[#64ffda] text-lg transition">Projects</a>
+            <a href="#skills" class="text-[#ccd6f6] hover:text-[#64ffda] text-lg transition">Skills</a>
+            <a href="#about" class="text-[#ccd6f6] hover:text-[#64ffda] text-lg transition">About</a>
+            <a href="#resume" class="text-[#ccd6f6] hover:text-[#64ffda] text-lg transition">Resume</a>
+            <a href="#contact" class="text-[#ccd6f6] hover:text-[#64ffda] text-lg transition">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-24 px-4 min-h-screen flex items-center" id="home">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center w-full">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Hi, I'm <span class="text-[#64ffda]">VARMA KRUNAL</span>
+                </h1>
+                <h1 class="text-3xl md:text-4xl font-semibold mb-4">A Frontend Developer</h1>
+                <p class="text-[#8892b0] text-lg max-w-xl">Specializing in building exceptional digital experiences with
+                    modern web technologies.</p>
+            </div>
+            <img src="i.jpg" alt="Profile"
+                class="w-full max-w-xs md:max-w-md rounded-lg mx-auto transition duration-300" />
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-[#020c1b] py-24 px-4" id="projects">
+        <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[#64ffda] after:mx-auto after:mt-3">
+            Featured Projects</h2>
+        <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+            <!-- Project 1 -->
+            <a href="https://indianrecipe.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="block bg-[#112240] rounded-lg overflow-hidden shadow hover:-translate-y-2 transition">
+                <img src="recipe.png" alt="E-commerce Platform" class="w-full h-52 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">FOOD RECIPE Platform</h3>
+                    <p class="text-[#8892b0] text-sm mb-3">A modern food recipe website featuring step-by-step
+                        instructions, ingredient search, and user-friendly design.</p>
+                    <div class="flex flex-wrap gap-2 text-xs text-[#64ffda]">
+                        <span>HTML</span>
+                        <span>JS</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </a>
+            <!-- Project 2 -->
+            <a href="catchinsect.vercel.app" target="_blank" rel="noopener noreferrer"
+                class="block bg-[#112240] rounded-lg overflow-hidden shadow hover:-translate-y-2 transition">
+                <img src="catch.jpg" alt="Task Manager" class="w-full h-52 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Catch The Insect</h3>
+                    <p class="text-[#8892b0] text-sm mb-3">A fun interactive game where players try to catch insects as quickly as possible, improving reflexes and hand-eye coordination.</p>
+                    <div class="flex flex-wrap gap-2 text-xs text-[#64ffda]">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+            </a>
+            <!-- Project 3 -->
+            <div class="bg-[#112240] rounded-lg overflow-hidden shadow hover:-translate-y-2 transition">
+                <img src="port.png" alt="Social Media Dashboard" class="w-full h-52 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Webpage</h3>
+                    <p class="text-[#8892b0] text-sm mb-3">A personal portfolio website showcasing my projects, skills, and experience as a frontend developer.</p>
+                    <div class="flex flex-wrap gap-2 text-xs text-[#64ffda]">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-[#020c1b] py-24 px-4" id="about">
+        <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[#64ffda] after:mx-auto after:mt-3">
+            About Me</h2>
+        <div class="max-w-6xl mx-auto">
+            <div class="grid gap-8">
+                <div>
+                    <h3 class="text-[#64ffda] text-lg font-semibold mb-2">VARMA KRUNAL MAYARAM</h3>
+                    <p class="text-[#8892b0] mb-2">📍 GUJARAT , INDIA</p>
+                    <p class="text-[#8892b0] max-w-2xl leading-relaxed">
+                        Frontend developer with 1+ years of experience crafting responsive web applications.
+                        Specialized in turning complex problems into simple, beautiful, and intuitive solutions.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-[#64ffda] text-lg font-semibold mb-2">Education</h3>
+                    <div class="bg-[#112240] p-6 rounded-lg mb-2">
+                        <h4 class="font-semibold">Bachelor of Computer Applications (BCA)</h4>
+                        <p class="text-[#64ffda] text-sm">Kadi Sarva Vishwavidyalaya
+                            Gandhinagar ,Gujarat</p>
+                        <p class="text-[#8892b0] text-sm">2024 to 2027</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-[#64ffda] text-lg font-semibold mb-2">Passions & Goals</h3>
+                    <p class="text-[#8892b0] border-l-4 border-[#64ffda] pl-4 leading-relaxed">
+                        💡 Passionate about creating accessible, performant web experiences<br>
+                        💼 Actively freelancing, delivering custom web solutions for clients worldwide<br>
+                        🌱 Learning React and Express.js<br>
+                        🎯 Goal to contribute to open-source projects full-time
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-[#64ffda] text-lg font-semibold mb-2">What I'm Looking For</h3>
+                    <p class="text-[#8892b0] border-l-4 border-[#64ffda] pl-4 leading-relaxed">
+                        I'm currently seeking opportunities to work on meaningful projects that:<br>
+                        ✅ Push the boundaries of modern web development<br>
+                        ✅ Value clean, maintainable code<br>
+                        ✅ Foster continuous learning and growth<br>
+                        ✅ Make a positive impact on end-users
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="bg-[#0a192f] py-24 px-4" id="resume">
+        <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[#64ffda] after:mx-auto after:mt-3">
+            My CV</h2>
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-[#8892b0] mb-8 leading-relaxed">You can download my latest CV to see my detailed experience,
+                skills, and qualifications.</p>
+            <a href="cv.pdf"
+                class="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#64ffda] text-[#64ffda] rounded-lg font-medium hover:bg-[#64ffda]/10 hover:-translate-y-1 transition text-lg"
+                download>
+                <i class="fas fa-file-download"></i> Download CV
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-24 px-4" id="skills">
+        <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[#64ffda] after:mx-auto after:mt-3">
+            Technical Skills</h2>
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-4 justify-center">
+            <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                HTML5</div>
+            <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                CSS3</div>
+            <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                JavaScript (ES6+)</div>
+            <!-- <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                React.js</div> -->
+            <!-- <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                Vue.js</div> -->
+            <!-- <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                Node.js</div> -->
+            <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                Git & GitHub</div>
+            <!-- <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                Webpack</div> -->
+            <!-- <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                REST APIs</div> -->
+            <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                Responsive Design</div>
+            <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                C/C++</div>
+            <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                SQL</div>
+            <!-- <div
+                class="bg-[#112240] text-[#64ffda] px-6 py-3 rounded-lg text-sm font-medium hover:-translate-y-1 transition">
+                Cross-browser Compatibility</div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-[#020c1b] py-24 px-4" id="contact">
+        <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[#64ffda] after:mx-auto after:mt-3">
+            Get In Touch</h2>
+        <form action="https://api.web3forms.com/submit" method="post" class="max-w-xl mx-auto space-y-6">
+            <input type="hidden" name="access_key" value="8448e87d-b7b8-456e-b67c-93501b792920">
+
+            <input type="text" name="name" placeholder="Name" required
+                class="w-full px-4 py-3 bg-[#112240] border border-[#233554] rounded-lg text-[#ccd6f6] focus:outline-none focus:border-[#64ffda] transition" />
+
+
+            <input type="email" name="email" placeholder="Email" required
+                class="w-full px-4 py-3 bg-[#112240] border border-[#233554] rounded-lg text-[#ccd6f6] focus:outline-none focus:border-[#64ffda] transition" />
+
+
+            <textarea name="Message" placeholder="Message" required rows="5"
+                class="w-full px-4 py-3 bg-[#112240] border border-[#233554] rounded-lg text-[#ccd6f6] focus:outline-none focus:border-[#64ffda] transition"></textarea>
+
+
+            <button type="submit"
+                class="w-full px-4 py-3 bg-[#64ffda] text-[#0a192f] font-semibold rounded-lg hover:bg-[#52e0c4] transition">
+                Send Message
+            </button>
+
+            <script>
+                // Mobile menu toggle
+                const menuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                // Optional: Hide menu on link click
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            </script>
+            <script src="index.js"></script>
+        </form>
+    </section>
+</body>
